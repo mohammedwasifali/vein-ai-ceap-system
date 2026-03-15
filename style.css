@@ -1,54 +1,80 @@
 body{
-font-family: Arial, sans-serif;
-background:#f4f6f9;
+background:#0f172a;
+font-family: "Segoe UI", sans-serif;
 margin:0;
+color:#e2e8f0;
+}
+
+.wrapper{
+max-width:900px;
+margin:auto;
+padding:40px;
 }
 
 header{
-background:#0b4f8a;
-color:white;
-padding:20px;
 text-align:center;
+margin-bottom:40px;
 }
 
-.container{
-width:800px;
-margin:30px auto;
-background:white;
+header h1{
+font-size:28px;
+margin-bottom:5px;
+}
+
+header p{
+color:#94a3b8;
+}
+
+form{
+background:#1e293b;
 padding:30px;
-border-radius:8px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+border-radius:12px;
+box-shadow:0 10px 40px rgba(0,0,0,0.4);
+}
+
+section{
+margin-bottom:35px;
 }
 
 h2{
-color:#0b4f8a;
-margin-top:30px;
-}
-
-.row{
-display:flex;
-gap:15px;
+font-size:18px;
 margin-bottom:15px;
+color:#38bdf8;
 }
 
-input,select{
-flex:1;
-padding:10px;
-border-radius:5px;
-border:1px solid #ccc;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+input, select{
+background:#0f172a;
+border:1px solid #334155;
+padding:12px;
+border-radius:8px;
+color:white;
+font-size:14px;
+}
+
+input:focus, select:focus{
+outline:none;
+border-color:#38bdf8;
 }
 
 button{
-margin-top:20px;
-padding:12px;
-background:#0b4f8a;
-color:white;
+margin-top:10px;
+width:100%;
+padding:14px;
+background:#38bdf8;
 border:none;
-border-radius:5px;
+border-radius:10px;
 font-size:16px;
+font-weight:600;
 cursor:pointer;
+color:#0f172a;
 }
 
 button:hover{
-background:#083b68;
+background:#0ea5e9;
 }
