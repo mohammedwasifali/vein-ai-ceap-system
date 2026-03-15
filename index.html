@@ -2,26 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>CVI Clinical Data Entry</title>
-
+<title>Clinical Data Entry</title>
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-<header>
-<h1>CVI Clinical Data Entry</h1>
-<p>Chronic Venous Disease Assessment System</p>
-</header>
+<div class="wrapper">
 
-<div class="container">
+<header>
+<h1>Clinical Data Entry</h1>
+<p>Patient assessment interface</p>
+</header>
 
 <form id="patientForm">
 
+<section>
 <h2>Patient Information</h2>
 
-<div class="row">
+<div class="grid">
 <input type="text" placeholder="Patient ID" required>
 <input type="number" placeholder="Age">
 <select>
@@ -30,9 +29,12 @@
 </select>
 </div>
 
+</section>
+
+<section>
 <h2>Clinical History</h2>
 
-<div class="row">
+<div class="grid">
 <select>
 <option>Pain: None</option>
 <option>Pain: Mild</option>
@@ -44,7 +46,6 @@
 <option>Swelling: No</option>
 <option>Swelling: Yes</option>
 </select>
-</div>
 
 <select>
 <option>Skin Pigmentation: No</option>
@@ -55,19 +56,21 @@
 <option>Active Ulcer: No</option>
 <option>Active Ulcer: Yes</option>
 </select>
+</div>
 
-<h2>Doppler Ultrasound Data</h2>
+</section>
 
-<div class="row">
+<section>
+<h2>Doppler Measurements</h2>
+
+<div class="grid">
 <select>
 <option>Vein: GSV</option>
 <option>Vein: SSV</option>
 </select>
 
 <input type="number" placeholder="Reflux Duration (seconds)">
-</div>
 
-<div class="row">
 <input type="number" placeholder="Vein Diameter (mm)">
 
 <select>
@@ -76,15 +79,21 @@
 </select>
 </div>
 
+</section>
+
+<section>
 <h2>rVCSS Score</h2>
 
-<input type="number" placeholder="rVCSS Score">
+<input type="number" placeholder="Enter rVCSS score">
 
+</section>
+
+<section>
 <h2>Leg Image</h2>
 
 <input type="file">
 
-<br>
+</section>
 
 <button type="submit">Submit Record</button>
 
